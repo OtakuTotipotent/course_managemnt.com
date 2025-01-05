@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f2f2f;
+    color: #fff;
+    font-family: 'verdana';
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: aqua;
+    cursor: grab;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: purple;
+    cursor: grabbing;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 0, 255);
+}
+
+/* Header & Navigation Styling */
+
+header ul {
+    display: flex;
+    background-color: aqua;
+    list-style: none;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+header a {
+    display: block;
+    height: 45px;
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-family: 'poppins';
+    transition: 0.3s ease-in-out;
+}
+
+header li:hover {
+    background-color: #333;
+    color: aqua;
+}
+
+header a:hover {
+    color: aqua;
+    transform: translateY(-8px);
+}
+
+#signUp-nav-item {
+    margin-left: auto;
+    background-color: purple;
+}
+
+#signUp-nav-item a {
+    color: #fff;
+}
+
+/* Main Body Data styling: Container & other Div in body */
+
+main {
+    max-width: 960px;
+    margin: auto;
+    background-color: #333;
+    padding-top: 4rem;
+    min-height: 93vh;
+    font-family: 'ABeeZee';
+    letter-spacing: 1.5px;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    gap: 2rem;
+    padding: 0px 4rem;
+}
+
+#text-box {
+    border: none;
+    border-radius: 2px;
+    padding: 6px 1rem;
+    font-family: 'ABeeZee';
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: aqua;
+    outline: 2px solid aqua;
+    box-shadow: 0 0 6px 4px aqua;
+    background-color: #333;
+}
+
+#text-box:hover {
+    color: purple;
+    outline: 2px solid purple;
+    box-shadow: 0 0 10px 3px purple;
+    background-color: #fff;
+}
+
+#submit-btn {
+    font-size: 1rem;
+    font-weight: 1000;
+    font-family: 'ABeeZee';
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: purple;
+    box-shadow: 0 0 32px 2px purple;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+    color: #333;
+    background-color: aqua;
+    box-shadow: 0 0 32px 2px aqua;
+}
+
+/* Courses List styling starts here */
+.list-section {
+    background-color: #2f2f2f;
+    margin-top: 18px;
+}
+
+.course-list {
+    width: 50%;
+    margin: auto;
+    color: aqua;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    font-weight: 600;
+    align-items: center;
+}
+
+.edit-btn,
+.remove-btn {
+    width: 3rem;
+    color: #333;
+    font-weight: 600;
+    border-radius: 3px;
+    font-family: 'ABeeZee';
+}
+
+.edit-btn {
+    padding: 3px;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+
+.remove-btn {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    background-color: red;
+    border: 2px solid red;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 6px 2px yellow;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 6px 3px red;
+}
+
+#emptyMsg4Courses {
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+    text-shadow: 1px 1px 4px red;
+}

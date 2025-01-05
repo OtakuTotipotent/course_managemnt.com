@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Offers</a></li>
+                <li id="signUp-nav-item"><a href="#">Sign up/Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="input-section">
+            <input id="text-box" type="text" placeholder="Enter course name here to add in the list down below">
+            <button id="submit-btn" type="submit">Add</button>
+        </div>
+        <div class="list-section">
+            <ol id="OrderList">
+
+                <li class="course-list">
+                    Zoology
+                    <button class="edit-btn">Edit</button>
+                    <button class="remove-btn">X</button>
+                </li>
+                <li class="course-list">
+                    Computer
+                    <button type="button" class="edit-btn">Edit</button>
+                    <button type="button" class="remove-btn">X</button>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
